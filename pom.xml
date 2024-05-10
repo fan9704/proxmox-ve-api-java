@@ -20,21 +20,29 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/fan9704/proxmox-ve-api-java</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.javawebstack</groupId>
             <artifactId>http-client</artifactId>
-            <version>1.0.2-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.javawebstack</groupId>
             <artifactId>abstract-data</artifactId>
-            <version>1.0.7-SNAPSHOT</version>
+            <version>1.0.4</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.28</version>
+            <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -43,7 +51,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.0.0-M1</version>
+                <version>3.0.0</version>
                 <executions>
                     <execution>
                         <id>default-deploy</id>
@@ -57,15 +65,15 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>lumaserv-snapshots</id>
-            <url>https://nexus.lumaserv.cloud/repository/lumaserv-snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>lumaserv-releases</id>
-            <url>https://nexus.lumaserv.cloud/repository/lumaserv-releases</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <snapshotRepository>-->
+<!--            <id>lumaserv-snapshots</id>-->
+<!--            <url>https://nexus.lumaserv.cloud/repository/lumaserv-snapshots</url>-->
+<!--        </snapshotRepository>-->
+<!--        <repository>-->
+<!--            <id>lumaserv-releases</id>-->
+<!--            <url>https://nexus.lumaserv.cloud/repository/lumaserv-releases</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 
 </project>
